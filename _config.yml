@@ -8,6 +8,7 @@ email: mcginnis@claymav.com
 description: A Programmer and a student at Missouri S&T.
 url: # the base hostname & protocol for your site
 keywords: ["Programming", "Python", "C++", "Programmer", "Golang", "Data", "Education", "Student"]
+include: [_redirects]
 
 #
 ###################################
@@ -39,7 +40,7 @@ owner:
   bio: "I am student at Missouri S&T. I program in mostly object oriented languages, and I also have a lot of experience with web design and programming for the web. I am currently employed as an Undergraduate Research Assistant for CEADS-LIN. Email me for more information."
   email: mcginnis@claymav.com
   disqus-shortname: #username
-  twitter: ClayMcGinnis #username
+  twitter: #ClayMcGinnis #username
   facebook: #claymavrekt #username
   google:
     plus: #username
