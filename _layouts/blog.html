@@ -1,0 +1,61 @@
+---
+layout: hub
+---
+
+{% for post in site.categories.blog %}
+<section class="post">
+    <p class="post___meta">
+      <span class="post___date">
+        {{ post.date | date: "%b %-d %Y" | upcase }}
+      </span>
+      {% if post.categories.size > 0 %}
+      •
+      {% for cat in post.categories %}
+        <a class="post___categories" href="{{ site.url }}/categories/#{{ cat }}">{{ cat }}</a>
+        {% unless forloop.last %},{% endunless %}
+      {% endfor %}
+      {% endif %}
+    </p>
+
+    <h3 class="post___title">
+      <a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+      {% if post.link %}
+      <a href="{{ post.link }}" target="_blank" title="{{ post.title }}"><i class="fa fa-external-link"></i></a>
+      {% endif %}
+    </h3>
+
+    {% if post.author %}
+      {% assign author = site.data.authors[post.author] %}
+    {% else %}
+      {% assign author = site.owner %}
+    {% endif %}
+
+    <div class="post___feature">
+      {% if post.image.feature %}
+      <div class="post___image">
+        <a href="{{ site.url }}{{ post.url }}">
+              <img src=
+              {% if post.image.feature contains 'http' %}
+              "{{ post.image.feature }}"
+              {% else %}
+              "{{ site.url }}/img/blog/{{ post.image.feature }}"
+              {% endif %}
+              alt="{{ post.title }} feature image">
+        </a>
+
+        {% if post.image.credit %}
+        <span class="post___image-credit">Photo Credit: <a href="{{ post.image.creditlink }}">{{ post.image.credit }}</a></span>
+        {% endif %}
+      </div>
+      {% endif %}
+
+      {% if post.excerpt %}
+        <div class="post___description">
+          <p>
+            {{ post.excerpt | truncatewords: 35 }}
+            <a href="{{ site.url }}{{ post.url }}">More</a>
+          </p>
+        </div>
+      {% endif %}
+</section>
+{% endfor %}

@@ -1,0 +1,146 @@
+/*
+ *  Author: Clay McGinnis
+ *  Default page styles go here
+ */
+
+
+
+// Navigation
+nav {
+  overflow: hidden;
+  z-index: 100;
+  top: 0;
+  background: lighten($background-color, 3%);
+  box-shadow: 0 0 6px 0 rgba(0,0,0,0.6);
+  position: sticky;
+  height: 56px;
+  width: 100%;
+}
+.nav-wrapper {
+  margin: auto;
+  display: flex;
+  max-width: 1000px;
+  height: 100%;
+  justify-content: space-between;
+
+  .nav___list {
+    padding: 0 10px;
+    margin: 0;
+    max-width: 400px;
+    flex: 3;
+    height: 100%;
+    list-style: none;
+    display: flex;
+
+    .nav___item {
+      font-family: $font-family-fancy;
+      display: inline-block;
+      margin: 0;
+      line-height: 56px;
+      text-transform: uppercase;
+      font-weight: lighter;
+      flex: 1;
+      
+      & a, span {
+        font-size: .94em;
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        padding: 0 4px;
+        text-align: center;
+        color: lighten($text-color, 25%);
+        margin: 0;
+        &:hover,
+        &:focus {
+          color: darken($text-color, 20%);
+        }
+      }
+
+      & .selected {
+        color: $accent;
+        &:hover,
+        &:focus {
+          color: lighten($accent, 15%);
+        }
+      }
+
+    }
+  }
+}
+
+.social-links {
+  flex: 1;
+  max-width: 200px;
+  background: $accent;
+  margin: 0 15px 0 0;
+
+  & ul {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+
+    & li {
+      list-style: none;
+      display: inline-block;
+      height: 100%;
+      &:nth-child(n+3) {
+        display: none;
+        @include media-query(520px) {
+          display: inline-block;
+        }
+      }
+
+      & .social-link-item {
+        color: white;
+        font-size: 1.3em;
+        height: 100%;
+        line-height: 56px;
+        &:hover,
+        &:focus {
+          color: darken(white, 10%);
+        }
+      }
+    }
+  }
+}
+
+/*
+ *  --===<< Main Styling >>===--
+ */
+
+// All content except header
+.page-wrapper {
+  position: relative;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+  min-height: 100vh;
+}
+
+// Bar that is colorful
+.color-bar {
+  width: 100%;
+  position: sticky;
+  top:56px;
+  height: 6px;
+  background: #FE837C;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #F9D423, #FE837C);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #F9D423, #FE837C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+main {
+  top: 0;
+  background: white;
+  color: rgba(0,0,0, 0.7);
+  
+  & .content-wrapper {
+    max-width: 1000px;
+    padding: 30px 25px 0 25px;
+    margin: auto;
+    @include media-query($small-screen) {
+      padding: 30px 40px 0 40px;
+    }
+  }
+}

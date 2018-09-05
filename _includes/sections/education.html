@@ -1,0 +1,4 @@
+<h2>Education</h2>
+{% for edu in site.data.index.education %}
+<div><strong>{{ edu.date }}</strong> <a href="{{ edu.link }}">{{ edu.name }}</a> - {{ edu.desc }}</div>
+{% endfor %}

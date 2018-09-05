@@ -1,0 +1,38 @@
+.notes {
+  .course___title {
+    margin: 20px 0 ;
+    font-size: 1.4em;
+    @include media-query($small-screen) {
+      font-size: 1.7em;
+    }
+  }
+  .course {
+    margin: 0;
+    list-style: none;
+    padding: 0 30px;
+    .note {
+      margin: 0 0 14px 0;
+      background: white;
+      box-shadow: 0 0 5px 0 rgba(0,0,0,.25);
+      a {
+        display: block;
+        padding: 12px 30px;
+        margin: 0;
+        border-left: 5px solid $accent;
+        label {
+          cursor: pointer;
+        }
+      }
+      .note___date {
+        margin: 0;
+        line-height: 20px;
+        font-size: .9em;
+        color: black;
+      }
+      .note___link {
+        margin: 0;
+        font-size: 1.2em;
+      }
+    }
+  }
+}

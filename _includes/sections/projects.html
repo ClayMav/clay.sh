@@ -1,0 +1,41 @@
+<h2 class="dark projects___heading">Projects</h2>
+{% for project in site.data.index.projects %}
+<div class="project dark">
+  <div class="project___wrapper">
+    {% if project.fullimage %}
+    <img class="project___img" src="{{ site.url }}/img/about/{{ project.fullimage }}">
+    {% else if project.icon %}
+    <img class="project___img" src="{{ site.url }}/img/about/{{ project.icon }}">
+    {% endif %}
+
+    <div class="project___text">
+      <h3 class="project___header">{{ project.name }}</h3>
+      <p class="project___desc">{{ project.desc }}</p>
+      <div class="project___meta">
+
+        <div class="project___tech">
+          <h5 class="project___tech-header">Tech Used:</h5>
+          <p class="project___tech-list">
+            {% for tech in project.tech %}
+            {{ tech.name }}{% if forloop.last == false %},{% endif %}
+            {% endfor %}
+          </p>
+        </div>
+        <div class="project___links">
+          {% if project.website %}
+          <a href="{{ project.website }}" class="project___link">
+            <i class="fa fa-fw fa-home"></i>Homepage</a>
+          {% endif %} {% if project.github %}
+          <a href="{{ project.github }}" class="project___link">
+            <i class="fa fa-fw fa-github"></i>GitHub</a>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endfor %}
+<p>For more of my projects, checkout my 
+<a href="https://github.com/{{ site.owner.github }}">
+            <i class="fa fa-fw fa-github"></i>GitHub</a>
+</p>

@@ -1,0 +1,54 @@
+- name: ACM Website
+  desc: "The website for the ACM branch at Missouri S&T. As the lead developer and project manager, I developed the front end and many backend elements. acm.mst.edu was built with Django, a Python web framework."
+  icon: acm.png
+  fullimage: acmwebsite.png
+  launchname: acm.mst.edu
+  tech:
+    - name: HTML/ CSS
+    - name: Python
+    - name: Django
+    - name: Vagrant
+  website: https://acm.mst.edu
+  github: https://github.com/sigdotcom/acm.mst.edu
+
+- name: Swoly
+  desc: "A fitness app, designed and developed by myself and Innocent Niyibizi. This app was built for powerlifters to be able to calculate the best possible weights to lift in a set. Built with logging and oAuth, it has a fairly robust feature set."
+  image: swoly.png
+  fullimage: swolyapp.jpg
+  launchname: android --run swoly
+  tech:
+    - name: SQLite
+    - name: Java
+    - name: XML
+  github: https://github.com/Durian-Inc/SwolyV2
+
+- name: VeterIn
+  desc: "A business focused network for connecting Veteran business owners with unemployed Veterans."
+  fullimage: VeterIn.png
+  launchname: flask run veterin
+  tech:
+    - name: Python (Flask)
+    - name: Javascript
+    - name: HTML/ CSS
+  github: https://github.com/Durian-Inc/VeterIn
+
+- name: DebateMingle
+  desc: "Connect with others in anonymous debates! Both players are told their stance, and fight for whats right!"
+  fullimage: DebateMingle.png
+  launchname: flask run debatemingle
+  tech:
+    - name: Python (Flask)
+    - name: Javascript
+    - name: HTML/ CSS
+  website: https://claymav.com/debate
+  github: https://github.com/Durian-Inc/DebateMingle
+
+- name: PongChat
+  desc: "Developed for MLH Hack Day. A group chat app designed around the game Pong. Our specific version of Pong allows n number of players to play Pong together."
+  fullimage: PongChat169.png
+  launchname: go run pongchat
+  tech:
+    - name: Golang
+    - name: Javascript
+    - name: HTML/ CSS
+  github: https://github.com/Durian-Inc/PongChat

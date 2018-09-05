@@ -1,0 +1,36 @@
+{% if page.author %} {% assign author = site.data.authors[page.author] %}{% else %}{% assign author = site.owner %} {% endif %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+{% include head.html %}
+
+<body id="body">
+  <nav>
+    <div class="nav-wrapper">
+      <ul class="nav___list">
+        <li class="nav___item">
+          <a href="{{ site.url }}">Home</a>
+        </li>
+        {% for link in site.pages %} {% if link.title %}
+        <li class="nav___item">
+          <a {% if link.title == page.title %}class="selected"{% endif %} href="{{ site.url }}{{ link.url }}">{{ link.title }}</a>
+        </li>
+        {% endif %} {% endfor %}
+      </ul>
+      {% include social-links.html %}
+    </div>
+  </nav>
+  <div class="page-wrapper">
+    <!--<div class="color-bar"></div>-->
+    <main>
+      <div class="content-wrapper">
+        {{ content }}
+      </div>
+      {% include footer.html %}
+    </main>
+  </div>
+
+  {% include js.html %}
+</body>
+</html>

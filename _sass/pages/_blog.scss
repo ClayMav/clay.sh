@@ -1,0 +1,57 @@
+/*
+ *  Author: Clay McGinnis
+ *  Blog page styles go here
+ */
+
+/*
+ *  --===<< Post Header >>===--
+ */
+
+.post {
+  margin: 20px 0;
+}
+
+.post___meta {
+  font-weight: bold;
+  margin: 0;
+}
+
+.post___categories {
+  text-transform: uppercase;
+}
+
+.post___title {
+  margin: 0 0 15px 0;
+  text-shadow: none;
+
+  & a {
+    color: $accent;
+  }
+}
+
+.post___feature {
+  @include media-query($small-screen) {
+    display: flex;
+  }
+}
+
+.post___image {
+  margin: 0 20px 0 0;
+
+  & img {
+    max-height: 300px;
+    box-shadow: 0 0 7px 0 rgba(0,0,0,0.3);
+  }
+
+  & .post___image-credit {
+    float: right;
+    font-size: .86em;
+  }
+}
+
+.post___description {
+  display: flex;
+  align-items: center;
+  max-height: 230px;
+  overflow: hidden;
+}

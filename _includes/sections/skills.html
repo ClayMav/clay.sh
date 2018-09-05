@@ -1,0 +1,21 @@
+<h2 class="projects___heading">Skills</h2>
+<h3 class="skills___list">Programming Languages:</h3>
+<ul class="skills___grid">
+  {% for skill in site.data.index.skills.programming %}
+  <li>
+    <h3 class="skill">{{ skill.name }}</h3>
+    <h6 class="skill___level">{{ skill.level }}</h6>
+    <p class="skill___desc">{{ skill.desc }}</p>
+  </li>
+  {% endfor %}
+</ul>
+<h3 class="skills___list">Other:</h3>
+<ul class="skills___grid">
+  {% for skill in site.data.index.skills.other %}
+  <li>
+    <h3 class="skill">{{ skill.name }}</h3>
+    <h6 class="skill___level">{{ skill.level }}</h6>
+    <p class="skill___desc">{{ skill.desc }}</p>
+  </li>
+  {% endfor %}
+</ul>

@@ -1,0 +1,336 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="AND Gate  Symbol is rounded            x      y      F                  0      0      0              0      1      0              1      0      0            ...">
+  <meta name="keywords" content="Programming, Python, C++, Programmer, Golang, Data, Education, and Student">
+  <meta name="author" content="Digital Logic Lecture 4 | Clay McGinnis">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f5f5f5">
+
+  <!-- Twitter Tags -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Digital Logic Lecture 4 | Clay McGinnis">
+  <meta name="twitter:description" content="AND Gate  Symbol is rounded            x      y      F                  0      0      0              0      1      0              1      0      0            ...">
+  <meta name="twitter:image" content="https://claymav.com/img/clay.png">
+
+  <!-- Open Graph Tags -->
+  <meta property="og:type" content="blog">
+  <meta property="og:url" content="https://claymav.com">
+  <meta property="og:title" content="Digital Logic Lecture 4 | Clay McGinnis">
+  <meta property="og:description" content="AND Gate  Symbol is rounded            x      y      F                  0      0      0              0      1      0              1      0      0            ...">
+  <meta property="og:image" content="https://claymav.com/img/clay.png">
+  <title>Digital Logic Lecture 4 | Clay McGinnis</title>
+
+  <!-- CSS files -->
+  <link rel="stylesheet" href="https://claymav.com/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://claymav.com/css/main.css">
+  <link rel="stylesheet" href="https://claymav.com/css/animations.css">
+
+  <link rel="canonical" href="https://claymav.com/notes/digital-logic-lecture-4">
+  <link rel="alternate" type="application/rss+xml" title="Clay McGinnis" href="https://claymav.com /feed.xml " />
+
+  <!-- Icons -->
+  <!-- 16x16 -->
+  <link rel="shortcut icon" href="https://claymav.com/favicon.ico">
+  <!-- 32x32 -->
+  <link rel="shortcut icon" href="https://claymav.com/favicon.png">
+</head>
+
+
+<body id="body">
+  <nav>
+    <div class="nav-wrapper">
+      <ul class="nav___list">
+        <li class="nav___item">
+          <a href="https://claymav.com">Home</a>
+        </li>
+           
+        <li class="nav___item">
+          <a  href="https://claymav.com/about/">About</a>
+        </li>
+                      
+        <li class="nav___item">
+          <a  href="https://claymav.com/notes/">Notes</a>
+        </li>
+          
+        <li class="nav___item">
+          <a  href="https://claymav.com/resume/">Resume</a>
+        </li>
+           
+      </ul>
+      <script type="text/javascript">
+  // based on http://stackoverflow.com/a/10300743/280842
+  function gen_mail_to_link(hs) {
+    var lhs,rhs;
+    var p = hs.split('@');
+    lhs = p[0];
+    rhs = p[1];
+    document.write("<a class=\"social-link-item\" target=\"_blank\" href=\"mailto");
+    document.write(":" + lhs + "@");
+    document.write(rhs + "\"><i class=\"fa fa-fw fa-envelope\"></i><\/a>");
+  }
+</script>
+<div class="social-links">
+  <ul>
+    <li><a href="http://github.com/claymav" class="social-link-item" target="_blank"><i class="fa fa-fw fa-github"></i></a></li> 
+    <li><a href="http://linkedin.com/in/claymav" class="social-link-item" target="_blank"><i class="fa fa-fw fa-linkedin"></i></a></li>
+    
+      <li>
+      <script>gen_mail_to_link('mcginnis@claymav.com');</script>
+      </li>
+    
+    <li><a href="http://twitter.com/ClayMcGinnis" class="social-link-item" target="_blank"><i class="fa fa-fw fa-twitter"></i></a></li>
+    
+    
+   
+    
+    
+   
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  </ul>
+</div>
+
+    </div>
+  </nav>
+  <div class="page-wrapper">
+    <!--<div class="color-bar"></div>-->
+    <main>
+      <div class="content-wrapper">
+        <h1 class="note___title">Boolean Algebra</h1>
+<h6 class="note___meta">Introduction to Digital Logic - CPE2210 - 24 January 2018</h6>
+<hr>
+
+<div class="note">
+  <h3 id="and-gate">AND Gate</h3>
+<ul>
+  <li>Symbol is rounded</li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>x</th>
+      <th>y</th>
+      <th>F</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="or-gate">OR Gate</h3>
+<ul>
+  <li>Nose cone shape, triangular</li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>x</th>
+      <th>y</th>
+      <th>F</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="not-gate">NOT Gate</h3>
+<ul>
+  <li>Also known as inverter</li>
+  <li>Symbol is triangle with dot on top</li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>x</th>
+      <th>F</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="operators">Operators</h3>
+<ul>
+  <li>Basic operators (more later)
+    <ul>
+      <li>AND = multiplication</li>
+      <li>OR = addition</li>
+      <li>NOT = ‘ or top-bar</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Ex.</p>
+<ul>
+  <li>F(a,b,c) = ab+c+ac’</li>
+  <li>What are the variables?
+    <ul>
+      <li>a, b, c</li>
+    </ul>
+  </li>
+  <li>What are the literals?
+    <ul>
+      <li>a, b, c, a, c’</li>
+    </ul>
+  </li>
+  <li>What are the product terms?
+    <ul>
+      <li>ab, c, ac’</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="commutativity">Commutativity</h3>
+<ul>
+  <li>Communtative</li>
+  <li>a + b = b + a</li>
+  <li>ab = ba</li>
+</ul>
+
+<h3 id="distributive">Distributive</h3>
+<ul>
+  <li>a(b + c) = ab + ac</li>
+  <li>a + (bc) = (a + b)(a + c)</li>
+</ul>
+
+<h3 id="associative">Associative</h3>
+<ul>
+  <li>a(bc) = (ab)c</li>
+</ul>
+
+<h3 id="identity">Identity</h3>
+<ul>
+  <li>a + 0 = 0 + a = a</li>
+  <li>a1 = 1a = a</li>
+</ul>
+
+<h3 id="complementary">Complementary</h3>
+<ul>
+  <li>a + a’ = 1</li>
+</ul>
+
+<h3 id="null">Null</h3>
+<ul>
+  <li>a + 1 = 1</li>
+  <li>a0 = 0</li>
+</ul>
+
+<h3 id="idempotent-law">Idempotent Law</h3>
+<ul>
+  <li>a + a = a</li>
+  <li>aa = a</li>
+</ul>
+
+<h3 id="demorgans-law">DeMorgan’s Law</h3>
+<ul>
+  <li>(a + b)’ = a’b’</li>
+  <li>(ab)’ = a’ + b’</li>
+</ul>
+
+<h3 id="absoption-law">Absoption Law</h3>
+<ul>
+  <li>a + ab = a</li>
+  <li>a(a + b) = a</li>
+</ul>
+
+<h3 id="theorem">Theorem</h3>
+<ul>
+  <li>a + a’b = a + b</li>
+  <li>a(a’ + b) = ab</li>
+</ul>
+
+<p>Ex.</p>
+<ul>
+  <li>F = x’yz + x’yz’ + xz</li>
+  <li>Simplify</li>
+  <li>F = x’y(z + z’) + xz</li>
+  <li>F = x’y + xz</li>
+</ul>
+
+</div>
+
+      </div>
+      <footer>
+  &copy; 2018 Clay McGinnis. Powered by <a href="http://jekyllrb.com/">Jekyll</a> made with <i class="fa fa-heart heart-icon"></i>
+</footer>
+
+    </main>
+  </div>
+
+  <script src="https://claymav.com/js/jquery-3.2.1.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="https://claymav.com/js/page.js"></script>
+<script type="text/javascript" src="https://claymav.com/js/typed.min.js"></script>
+
+
+</body>
+</html>

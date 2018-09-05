@@ -1,0 +1,55 @@
+{% assign author = site.owner %}
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Home | Clay McGinnis</title>
+    <meta name="description" content="The portfolio of Clay McGinnis">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+    <link rel="stylesheet" href="../css/splash.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+  </head>
+  <body>
+    <!--[if lte IE 9]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
+
+    <div class="page-wrapper">
+      <div class="nav-splash">
+        <h1>Clay McGinnis</h1>
+        <nav>
+          <ul>
+            <li class="side-nav__item">
+              <a href="{{ site.url }}">Home</a>
+            </li>
+            {% for link in site.pages %} {% if link.title %}
+            <li class="side-nav__item">
+              <a href="{{ site.url }}{{ link.url }}">{{ link.title }}</a>
+            </li>
+            {% endif %} {% endfor %}
+          </ul>
+        </nav>
+      </div>
+      <div class="console">
+        <div>
+          <span class="textbox" unselectable="on" id="t0" label="cd my_projects"></span>
+        </div>
+        {% for project in site.data.index.projects %}
+        <div>
+          <span class="textbox" unselectable="on" id="t{{ forloop.index }}" label="{{ project.launchname }}"></span>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="social-sidebar">
+    {% include social-links.html %}
+    </div>
+    <script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
+    <script src="js/main.js" type="text/javascript"></script>
+    <script src="js/typed.min.js" type="text/javascript"></script>
+  </body>
+</html>

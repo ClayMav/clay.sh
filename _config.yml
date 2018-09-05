@@ -1,0 +1,67 @@
+#
+###################################
+# Site wide configuration
+####################################
+#
+title: Clay McGinnis
+email: mcginnis@claymav.com
+description: A Programmer and a student at Missouri S&T.
+url: https://claymav.com # the base hostname & protocol for your site
+keywords: ["Programming", "Python", "C++", "Programmer", "Golang", "Data", "Education", "Student"]
+
+#
+###################################
+# Jekyll configuration
+####################################
+#
+timezone:          Chicago
+markdown:          kramdown
+highlighter:       rouge
+excerpt_separator: <!--more-->
+permalink:         /:categories/:title
+
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  enable_coderay: false
+
+#
+###################################
+# Site Owner configuration
+####################################
+#
+owner:
+  name: Clay McGinnis
+  avatar: clay.jpg
+  job: "Student, Programmer"
+  bio: "I am student at Missouri S&T. I program in mostly object oriented languages, and I also have a lot of experience with web design and programming for the web. I am currently employed as an Undergraduate Research Assistant for CEADS-LIN. Email me for more information."
+  email: mcginnis@claymav.com
+  disqus-shortname: #username
+  twitter: ClayMcGinnis #username
+  facebook: #claymavrekt #username
+  google:
+    plus: #username
+    analytics: 
+    verify:
+    ad-client:
+    ad-slot:
+  bing-verify:
+  github: claymav #username
+  stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
+  linkedin: claymav #username
+  xing: #username
+  instagram: #username
+  lastfm: #username
+  tumblr: #username
+  pinterest: #username
+  foursquare: #username
+  steam: #username
+  dribbble: #username
+  youtube: #username
+  soundcloud: #username
+  weibo: #username
+  flickr: #username
+  codepen: #username
+  telegram: #username

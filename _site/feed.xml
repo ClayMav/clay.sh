@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Clay McGinnis</title>
+    <description>A Programmer and a student at Missouri S&amp;T.</description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 06 Aug 2018 22:51:50 +0000</pubDate>
+    <lastBuildDate>Mon, 06 Aug 2018 22:51:50 +0000</lastBuildDate>
+    <generator>Jekyll v3.8.3</generator>
+    
+      <item>
+        <title>Databases Lecture 18</title>
+        <description>&lt;h2 id=&quot;database-design&quot;&gt;Database Design&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Data Model&lt;/strong&gt; is a group of concepts that helps to specify the structure of a database and a set of associated operations allowing data retrieval and manipulation.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;An &lt;strong&gt;entity type&lt;/strong&gt; is represented by a rectangular box&lt;/li&gt;
+  &lt;li&gt;An &lt;strong&gt;attribute&lt;/strong&gt; is represented by an oval attached to the &lt;em&gt;entity type&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Composite attribute&lt;/strong&gt; is attached to components&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Multi-value attributes&lt;/strong&gt; are represented by a double oval&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Thu, 08 Mar 2018 00:00:00 +0000</pubDate>
+        <link>http://localhost:4000/notes/databases-lecture-18</link>
+        <guid isPermaLink="true">http://localhost:4000/notes/databases-lecture-18</guid>
+        
+        
+        <category>notes</category>
+        
+      </item>
+    
+      <item>
+        <title>Databases Lecture 15</title>
+        <description>&lt;p&gt;B-Tree&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;of order p (how many levels)&lt;/li&gt;
+  &lt;li&gt;Each internal node has the following format
+    &lt;blockquote&gt;
+      &lt;p&gt;&amp;lt;P1, &amp;lt;K1, Pr1&amp;gt;, P2, &amp;lt;K1, Pr1&amp;gt;, … , Pq-1, &amp;lt;Kq-1, Prq-1&amp;gt;, Pq&amp;gt;&lt;/p&gt;
+    &lt;/blockquote&gt;
+    &lt;ul&gt;
+      &lt;li&gt;q &amp;lt;= p&lt;/li&gt;
+      &lt;li&gt;Pi is a tree pointer a pointer to another node in the B-Tree&lt;/li&gt;
+      &lt;li&gt;Pri is a data pointer, a pointer to a data block that contains a record with a search key value equal to Ki.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Must have ciel(p/2) pointers&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Likely seeing B-Tree or B+-Tree on the test&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        <pubDate>Thu, 01 Mar 2018 00:00:00 +0000</pubDate>
+        <link>http://localhost:4000/notes/databases-lecture-15</link>
+        <guid isPermaLink="true">http://localhost:4000/notes/databases-lecture-15</guid>
+        
+        
+        <category>notes</category>
+        
+      </item>
+    
+      <item>
+        <title>Databases Lecture 13</title>
+        <description>&lt;h2 id=&quot;secondary-indexes&quot;&gt;Secondary Indexes&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;A secondary indexing scheme is a dense ordered file of record each with two fields:
+    &lt;ul&gt;
+      &lt;li&gt;Same data type as some non ordering field of the data file&lt;/li&gt;
+      &lt;li&gt;pointer to a disk block&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <pubDate>Thu, 22 Feb 2018 00:00:00 +0000</pubDate>
+        <link>http://localhost:4000/notes/databases-lecture-13</link>
+        <guid isPermaLink="true">http://localhost:4000/notes/databases-lecture-13</guid>
+        
+        
+        <category>notes</category>
+        
+      </item>
+    
+      <item>
+        <title>Databases Lecture 9</title>
+        <description>&lt;h2 id=&quot;hashing&quot;&gt;Hashing&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Advantages
+    &lt;ul&gt;
+      &lt;li&gt;Fast search time&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Disadvantages
+    &lt;ul&gt;
+      &lt;li&gt;Collisions&lt;/li&gt;
+      &lt;li&gt;Address space (wasted space)
+        &lt;blockquote&gt;
+          &lt;p&gt;the size of the address space is m (records) * n (buckets)&lt;/p&gt;
+        &lt;/blockquote&gt;
+
+        &lt;blockquote&gt;
+          &lt;p&gt;fixed size&lt;/p&gt;
+        &lt;/blockquote&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Difficult to get a good hash function&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;buckets&quot;&gt;Buckets&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Once one bucket fills up, it splits into two&lt;/li&gt;
+  &lt;li&gt;binary tree&lt;/li&gt;
+  &lt;li&gt;Internal nodes have no data, but point&lt;/li&gt;
+  &lt;li&gt;leaf nodes contain data&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Tue, 13 Feb 2018 00:00:00 +0000</pubDate>
+        <link>http://localhost:4000/notes/databases-lecture-9</link>
+        <guid isPermaLink="true">http://localhost:4000/notes/databases-lecture-9</guid>
+        
+        
+        <category>notes</category>
+        
+      </item>
+    
+      <item>
+        <title>Algorithms Lecture 8</title>
+        <description>
+</description>
+        <pubDate>Tue, 13 Feb 2018 00:00:00 +0000</pubDate>
+        <link>http://localhost:4000/notes/algorithms-lecture-8</link>
+        <guid isPermaLink="true">http://localhost:4000/notes/algorithms-lecture-8</guid>
+        
+        
+        <category>notes</category>
+        
+      </item>
+    
+      <item>
+        <title>Digital Logic Lecture 12</title>
+        <description>&lt;ul&gt;
+  &lt;li&gt;NAND
+    &lt;ul&gt;
+      &lt;li&gt;Outputs 0 when both inputs are 1 (opposite of AND)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;NOR
+    &lt;ul&gt;
+      &lt;li&gt;Outputs 1 if both inputs are 0 (opposite of OR)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;XOR ⊕
+    &lt;ul&gt;
+      &lt;li&gt;Outputs 1 when there are only odd numbered 1s inputted&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;XNOR
+    &lt;ul&gt;
+      &lt;li&gt;Outputs 1 when there are only even numbered 1s inputted&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;expressing-the-gates-as-other-gates&quot;&gt;Expressing the gates as other gates&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;NOT = same input NAND, same input NOR&lt;/li&gt;
+  &lt;li&gt;AND = double NAND, double NOT NOR&lt;/li&gt;
+  &lt;li&gt;OR = double NOT NAND, double NOR&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Mon, 12 Feb 2018 00:00:00 +0000</pubDate>
+        <link>http://localhost:4000/notes/digital-logic-lecture-12</link>
+        <guid isPermaLink="true">http://localhost:4000/notes/digital-logic-lecture-12</guid>
+        
+        
+        <category>notes</category>
+        
+      </item>
+    
+      <item>
+        <title>Ethics Lecture 11</title>
+        <description>&lt;p&gt;Kant wants to show that abstract reason is the only grounding for morality (morality formula)&lt;/p&gt;
+
+&lt;h3 id=&quot;categorical-imperative-universal-moral-law&quot;&gt;Categorical Imperative (Universal moral law)&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Formula #1 - Universal Law
+    &lt;ul&gt;
+      &lt;li&gt;Never commit an action that you couldn’t at the same time will into universal law&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Testing: is it logical/ immoral - logical contradiction&lt;/li&gt;
+  &lt;li&gt;Can’t lie: leads to a contradiction, if willed universally no one would take lie for truth&lt;/li&gt;
+  &lt;li&gt;Rational Constant: its irrational not to take context into consideration
+    &lt;ul&gt;
+      &lt;li&gt;better idea? - goal trying to be achieved? duties conflict?&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <pubDate>Fri, 09 Feb 2018 00:00:00 +0000</pubDate>
+        <link>http://localhost:4000/notes/ethics-lecture-11</link>
+        <guid isPermaLink="true">http://localhost:4000/notes/ethics-lecture-11</guid>
+        
+        
+        <category>notes</category>
+        
+      </item>
+    
+      <item>
+        <title>Digital Logic Lecture 11</title>
+        <description>&lt;h2 id=&quot;use-slides-online&quot;&gt;Use Slides online&lt;/h2&gt;
+</description>
+        <pubDate>Fri, 09 Feb 2018 00:00:00 +0000</pubDate>
+        <link>http://localhost:4000/notes/digital-logic-lecture-11</link>
+        <guid isPermaLink="true">http://localhost:4000/notes/digital-logic-lecture-11</guid>
+        
+        
+        <category>notes</category>
+        
+      </item>
+    
+      <item>
+        <title>Databases Lecture 7</title>
+        <description>&lt;p&gt;Record i in an unordered, fixed length unspanned contigous file (relative file) can be accessed very easily, how?&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ceil(i / bfr)&lt;/code&gt; will be equal to the block that you are trying to access, and the displacement will tell you the record&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;Above point might be on the exam&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;ordered-files&quot;&gt;Ordered Files&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;Records will be sorted based on several &lt;strong&gt;ordering fields&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;In the case that the &lt;em&gt;ordering field&lt;/em&gt; is also a &lt;strong&gt;key field&lt;/strong&gt;, the field is also called the &lt;strong&gt;ordering key&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Irrelevant info: &lt;strong&gt;Index&lt;/strong&gt; is auxiliary information that we will use to find a position&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Index files will add complexity, as they may need to be modified as files are deleted or modified. With ordered, much more so as many blocks may change at a time.&lt;/p&gt;
+
+&lt;h4 id=&quot;hashing&quot;&gt;Hashing&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;Allows us to establish a relationship between value and address.&lt;/li&gt;
+  &lt;li&gt;Uses an input (value) as a parameter in a hashing function which results in an address&lt;/li&gt;
+  &lt;li&gt;A good hashing function will distribute data evenly, minimalize collisions, and utilize space efficiently&lt;/li&gt;
+  &lt;li&gt;Problems:
+    &lt;ul&gt;
+      &lt;li&gt;Collisions, if the hash mapping is not 1-1 (i.e. value is not unique, or function produces same output)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&quot;internal-hashing&quot;&gt;Internal Hashing&lt;/h5&gt;
+&lt;ul&gt;
+  &lt;li&gt;Happens in internal memory&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&quot;external-hashing&quot;&gt;External Hashing&lt;/h5&gt;
+&lt;ul&gt;
+  &lt;li&gt;Happens in external storage (disk)&lt;/li&gt;
+  &lt;li&gt;The addresses are not to memory, but to blocks on the disk&lt;/li&gt;
+  &lt;li&gt;Collisions are better in external hashing&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&quot;collision-resolution&quot;&gt;Collision Resolution&lt;/h5&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Open Hashing&lt;/strong&gt;: After collision, proceed to the next available spot&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Chaining&lt;/strong&gt;: Each slot is augmented by a pointer that points to a table which contains overflow space&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Multiple hashing&lt;/strong&gt;: A second (different) hash function is applied if collision occurs&lt;/li&gt;
+  &lt;li&gt;Insertion, deletion, and retrieval vary based on algorithm used.&lt;/li&gt;
+  &lt;li&gt;Chaining is easiest&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Thu, 08 Feb 2018 00:00:00 +0000</pubDate>
+        <link>http://localhost:4000/notes/databases-lecture-7</link>
+        <guid isPermaLink="true">http://localhost:4000/notes/databases-lecture-7</guid>
+        
+        
+        <category>notes</category>
+        
+      </item>
+    
+      <item>
+        <title>Ethics Lecture 10</title>
+        <description>&lt;h3 id=&quot;duties&quot;&gt;Duties&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;What motivates them or makes them “stick”?
+    &lt;ul&gt;
+      &lt;li&gt;Family (children, spouse, parents):
+        &lt;ul&gt;
+          &lt;li&gt;Invested into relationship&lt;/li&gt;
+          &lt;li&gt;Instinct to take care of&lt;/li&gt;
+          &lt;li&gt;Societal norms/laws (psychological egoist)&lt;/li&gt;
+          &lt;li&gt;Commitment/voluntary&lt;/li&gt;
+          &lt;li&gt;Parents:
+            &lt;ul&gt;
+              &lt;li&gt;Spent time/resources on us (we owe them)&lt;/li&gt;
+              &lt;li&gt;Needs have to be met (dependents)&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Professional duties/job:
+        &lt;ul&gt;
+          &lt;li&gt;Engineers:
+            &lt;ul&gt;
+              &lt;li&gt;Actions/work affect others&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;Military/Police:
+            &lt;ul&gt;
+              &lt;li&gt;Duty to protect/serve&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;Doctors:
+            &lt;ul&gt;
+              &lt;li&gt;“Do no harm”&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Religious duties:
+        &lt;ul&gt;
+          &lt;li&gt;Identity/faith&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Civic duties/society:
+        &lt;ul&gt;
+          &lt;li&gt;Owe to society?
+            &lt;ul&gt;
+              &lt;li&gt;Reflexive duty - to citizen too&lt;/li&gt;
+              &lt;li&gt;Self-interest - make a better society for me&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;thought-experiment&quot;&gt;Thought Experiment&lt;/h4&gt;
+&lt;ol&gt;
+  &lt;li&gt;Someone is starving in NY + Jones is doing nothing about it&lt;/li&gt;
+  &lt;li&gt;Jones’ mother is starving in NY + he’s doing nothing&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Which is worse?&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;1 or same obligation&lt;/th&gt;
+      &lt;th&gt;2&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;impartial, 1 person is still suffering&lt;/td&gt;
+      &lt;td&gt;More of an obligation&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;issues w/ equal obligation&lt;/td&gt;
+      &lt;td&gt;If everyone takes care of family, nearly everyone gets taken care of&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;places moral obligation too high&lt;/td&gt;
+      &lt;td&gt;Owe her more than a stranger&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;For Confucius, a person is always a person in relationship/context&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;ren is biological human&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Ren is humanity as acheivement&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;good person = excels at his/her relationships&lt;/p&gt;
+
+&lt;p&gt;Filiality (duties to family) - the root of ren&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Being filial:
+    &lt;ul&gt;
+      &lt;li&gt;Respect:
+        &lt;ul&gt;
+          &lt;li&gt;convey respect&lt;/li&gt;
+          &lt;li&gt;feel respect&lt;/li&gt;
+          &lt;li&gt;not just providing&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Wed, 07 Feb 2018 00:00:00 +0000</pubDate>
+        <link>http://localhost:4000/notes/ethics-lecture-10</link>
+        <guid isPermaLink="true">http://localhost:4000/notes/ethics-lecture-10</guid>
+        
+        
+        <category>notes</category>
+        
+      </item>
+    
+  </channel>
+</rss>
