@@ -6,7 +6,7 @@
 title: Clay McGinnis
 email: mcginnis@claymav.com
 description: A Programmer and a student at Missouri S&T.
-url: clay.sh # the base hostname & protocol for your site
+url: # the base hostname & protocol for your site
 keywords: ["Programming", "Python", "C++", "Programmer", "Golang", "Data", "Education", "Student"]
 
 #
