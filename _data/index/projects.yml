@@ -40,7 +40,7 @@
     - name: Python (Flask)
     - name: Javascript
     - name: HTML/ CSS
-  website: https://claymav.com/debate
+  website: https://debatemingle.herokuapp.com/
   github: https://github.com/Durian-Inc/DebateMingle
 
 - name: PongChat
