@@ -1,4 +1,14 @@
 # Redirect domain aliases to primary domain
+https://www.claymav.com/freyja http://131.151.163.184:8096 301!
+https://claymav.com/freyja http://131.151.163.184:8096 301!
+https://www.claymav.com/debate https://debatemingle.herokuapp.com 301!
+https://claymav.com/debate https://debatemingle.herokuapp.com 301!
+
+https://www.clay.sh/freyja http://131.151.163.184:8096 301!
+https://clay.sh/freyja http://131.151.163.184:8096 301!
+https://www.clay.sh/debate https://debatemingle.herokuapp.com 301!
+https://clay.sh/debate https://debatemingle.herokuapp.com 301!
+
 https://www.claymav.com/* https://clay.sh/:splat 301!
 https://claymav.com/* https://clay.sh/:splat 301!
 
