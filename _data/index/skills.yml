@@ -1,42 +1,39 @@
 # skills section data
 
 programming:
-  - name: C++
-    level: Strong
-    desc: I have done several projects with C++ through classes. Classes include&#58; Introduction to Programming with C++, Data Structures, and Discrete Mathematics.
-
   - name: Python
     level: Strong
-    desc: Self-taught through casual programming. I also use Python for Django programming. Many years experience.
-  - name: Go
+    desc: Self-taught. Many years experience writing for my research, drone AI, side projects, and hackathons.
+
+  - name: C++
     level: Strong
+    desc: Several projects through classes. Classes include&#58; Introduction to Programming with C++, Data Structures, and Discrete Mathematics.
+
+  - name: Go
+    level: Knowledgable
     desc: Learned through classes, testing and projects. Designed and built a web-server/ group-chat server with Go for a project called PongChat.
 
-  - name: HTML/CSS
+  - name: React.js
     level: Strong
-    desc: Fully programmed acm.mst.edu's front-end. Many years experience.
+    desc: Lead developer for ACM WEB at Missouri S&T. Used in many side projects.
 
-  - name: Javascript
-    level: Knowledgable
-    desc: Learned through both classes and side projects. Familiar with React, Node, and ES6.
-
-  - name: Rust
-    level: Knowledgable
-    desc: Self-taught through the docs.
-
-  - name: R
-    level: Knowledgable
-    desc: Used for my Engineering Statistics class.
+  - name: Typescript
+    level: Strong
+    desc: Classes, side projects, and extracurriculars. Also know JavaScript very well.
 
 other:
   - name: Unix
     level: Strong
-    desc: I have been using GNU/Linux as my default operating system for years. Both desktop and server experience. I also use MacOS.
+    desc: Used GNU/Linux as daily driver for years. Desktop and server experience. Also use MacOS.
 
   - name: Git
     level: Strong
-    desc: I have used Git with every project that I have done. Working with Git workflows to increase efficiency has been a big target for me.
+    desc: Used Git with every project I have done. Working with Git workflows to increase efficiency has been a big target for me.
 
   - name: LaTeX
     level: Knowledgable
     desc: I use LaTeX to write up my homework files, and I also wrote my resume with this.
+
+  - name: R
+    level: Knowledgable
+    desc: Used for my Engineering Statistics class.
