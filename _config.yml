@@ -4,10 +4,10 @@
 ####################################
 #
 title: Clay McGinnis
-email: mcginnis@claymav.com
+email: mcginnis@clay.sh
 description: A Programmer and a student at Missouri S&T.
 url: # the base hostname & protocol for your site
-keywords: ["Programming", "Python", "C++", "Programmer", "Golang", "Data", "Education", "Student"]
+keywords: ["Programming", "Python", "TypeScript", "JavaScript", "React", "C++", "Programmer", "Golang", "Data", "Education", "Student"]
 include: [_redirects]
 
 #
@@ -37,11 +37,11 @@ owner:
   name: Clay McGinnis
   avatar: clay.jpg
   job: "Student, Programmer"
-  bio: "Student at Missouri S&T. I am proficient in many object oriented languages, and have strong skills in web development, front end and backend. I am currently employed as an Undergraduate Research Assistant for CEADS-LIN. Email me with any questions!"
-  email: mcginnis@claymav.com
+  bio: "Student at Missouri S&T. I am proficient in many object oriented languages, and have strong skills in web development, front end and backend."
+  email: mcginnis@clay.sh
   disqus-shortname: #username
-  twitter: #ClayMcGinnis #username
-  facebook: #claymavrekt #username
+  twitter: #username
+  facebook: #username
   google:
     plus: #username
     analytics: 

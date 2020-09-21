@@ -4,9 +4,9 @@
   launchname: python flight.py
   tech:
     - name: Python
-    - name: DroneKit
+    - name: PX4
     - name: Microcontroller
-  github: https://github.com/MissouriMRR/IARC-2019
+  github: https://github.com/MissouriMRR/IARC-2020
   level: 1
 
 - name: DwDD - Dude, Where's my Designated Driver
@@ -22,16 +22,16 @@
   level: 1
 
 - name: ACM Website
-  desc: "The website for the ACM branch at Missouri S&T. As the lead developer and project manager, I developed the front end and many backend elements. acm.mst.edu was built with Django, a Python web framework."
+  desc: "The website for the ACM branch at Missouri S&T. As the lead developer and project manager, I developed the front end and many backend elements. Built using TypeScript and React.js."
   icon: acm.png
   fullimage: acmwebsite.png
-  launchname: firefox acm.mst.edu
+  launchname: open acm.mst.edu
   tech:
-    - name: Python (Django)
+    - name: TypeScript
     - name: HTML/ CSS
-    - name: Vagrant
-  website: https://acm.mst.edu
-  github: https://github.com/sigdotcom/acm.mst.edu
+    - name: React.js
+  website: https://mstacm.org
+  github: https://github.com/sigdotcom/mstacm.org
   level: 1
 
 - name: Swoly
@@ -53,7 +53,7 @@
     - name: Python (Flask)
     - name: Javascript
     - name: HTML/ CSS
-  website: https://debatemingle.herokuapp.com/
+  website: https://clay.sh/debate
   github: https://github.com/Durian-Inc/DebateMingle
   level: 2
 
