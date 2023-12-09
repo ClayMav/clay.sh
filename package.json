@@ -1,28 +1,39 @@
 {
   "name": "clay.sh",
   "version": "0.1.0",
+  "license": "MIT",
   "private": false,
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": "please-use-yarn"
+  },
   "scripts": {
-    "build": "next build && next export -o build",
+    "build": "next build",
+    "serve": "next start",
     "start": "next dev",
-    "lint": "next lint"
+    "lint": "next lint",
+    "lint:fix": "next lint --fix"
   },
   "dependencies": {
-    "next": "14.0.1",
+    "next": "14.0.4",
     "react": "^18",
-    "react-dom": "^18",
-    "react-pdf": "^7"
+    "react-dom": "^18"
   },
   "devDependencies": {
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "@types/react-pdf": "6",
+    "@types/node": "^20.10.4",
+    "@types/react": "^18.2.42",
+    "@types/react-dom": "^18.2.17",
     "autoprefixer": "^10.0.1",
-    "eslint": "^8",
-    "eslint-config-next": "14.0.1",
-    "postcss": "^8",
-    "tailwindcss": "^3.3.0",
-    "typescript": "^5"
+    "eslint": "^8.55.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-config-next": "14.0.4",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-config-react-app": "^7.0.1",
+    "eslint-plugin-prettier": "^5.0.1",
+    "postcss": "^8.4.32",
+    "prettier": "^3.1.0",
+    "tailwindcss": "^3.3.6",
+    "typescript": "^5.3.3"
   }
 }
