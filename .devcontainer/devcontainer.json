@@ -23,24 +23,25 @@
 				"GitHub.copilot-chat",
 				"DavidAnson.vscode-markdownlint",
 				"unifiedjs.vscode-mdx",
-				"bradlc.vscode-tailwindcss"
+				"bradlc.vscode-tailwindcss",
+				"esbenp.prettier-vscode"
 			],
 			"settings": {
-				"[typescript]": {
-					"editor.defaultFormatter": "dbaeumer.vscode-eslint"
-				},
-				"[typescriptreact]": {
-					"editor.defaultFormatter": "dbaeumer.vscode-eslint"
-				},
-				"[markdown]": {
-					"editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
-				},
-				"[json]": {
-					"editor.defaultFormatter": "vscode.json-language-features"
-				},
+				"editor.defaultFormatter": "esbenp.prettier-vscode",
+				// "[typescript]": {
+				// 	"editor.defaultFormatter": "esbenp.prettier-vscode"
+				// },
+				// "[typescriptreact]": {
+				// 	"editor.defaultFormatter": "esbenp.prettier-vscode"
+				// },
+				// "[markdown]": {
+				// 	"editor.defaultFormatter": "esbenp.prettier-vscode"
+				// },
+				// "[json]": {
+				// 	"editor.defaultFormatter": "esbenp.prettier-vscode"
+				// },
 				"editor.inlineSuggest.enabled": true,
 				"editor.formatOnSave": true,
-				"eslint.format.enable": true,
 				"editor.codeActionsOnSave": {
 					"source.fixAll": true
 				}

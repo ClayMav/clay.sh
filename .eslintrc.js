@@ -13,6 +13,15 @@ module.exports = {
       "prettier",
     ],
     overrides: [],
+    parser: "@typescript-eslint/parser",
+    parserOptions: {
+      ecmaVersion: "latest",
+      ecmaFeatures: {
+        jsx: true,
+      },
+      sourceType: "module",
+      project: ["./tsconfig.json"],
+    },
     plugins: ["prettier", "react", "@typescript-eslint"],
     rules: {
       "react/react-in-jsx-scope": 0,

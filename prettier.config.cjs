@@ -1,11 +1,13 @@
 /** @type {import("prettier").Config} */
 const config = {
   trailingComma: "all",
-  tabWidth: 2,
+  tabWidth: 4,
   semi: true,
   singleQuote: false,
   useTabs: false,
   endOfLine: "auto",
+  importOrderSeparation: true,
+  plugins: ["@trivago/prettier-plugin-sort-imports"],
 };
 
-export default config;
+module.exports = config;

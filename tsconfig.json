@@ -37,7 +37,8 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     ".eslintrc.js",
-    "*.config.js"
+    "*.config.js",
+    "prettier.config.cjs"
   ],
   "exclude": [
     "node_modules"
