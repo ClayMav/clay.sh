@@ -17,9 +17,18 @@ const projects: ProjectInfo[] = [
         description:
             "The spatial data analytics and AI platform trusted in production, at scale, from the original creators of Apache Sedona.",
         button: (
-            <button className="bg-blue-600 border-black border-2 rounded-md inline px-5 py-4 uppercase text-white">
-                Learn More
-            </button>
+            <a href="https://wherobots.com">
+                <button
+                    className="rounded-md inline px-5 py-4 uppercase text-white bg-gradient-to-l from-[#9e78f0] to-[#0957c3] hover:from-[#1b1b1b] hover:to-[#1b1b1b] border-2 hover:border-[#9e78f0] border-[#141414]"
+                    style={{
+                        textDecoration: "none",
+                        letterSpacing: "-.16px",
+                        fontFamily: '"Space Grotesk",sans-serif',
+                    }}
+                >
+                    Learn More
+                </button>
+            </a>
         ),
     },
     {
@@ -28,9 +37,18 @@ const projects: ProjectInfo[] = [
         description:
             "The spatial data analytics and AI platform trusted in production, at scale, from the original creators of Apache Sedona.",
         button: (
-            <button className="border-4 border-[#C88502] rounded-lg inline bg-[#2D1B1B] px-5 py-4 text-white">
-                Learn More
-            </button>
+            <a href="https://stratos.host">
+                <button
+                    className="rounded-md inline bg-[#2D1B1B] text-white border-double border-4 border-transparent transition-all bg-origin-border w-[181px] h-[3.5rem] hover:border-[6px]"
+                    style={{
+                        backgroundImage:
+                            "linear-gradient(rgb(27, 29, 30), rgb(27, 29, 30)), radial-gradient(circle at left top, rgb(200, 133, 2), rgb(126, 0, 204))",
+                        backgroundClip: "content-box,border-box",
+                    }}
+                >
+                    Learn More
+                </button>
+            </a>
         ),
     },
 ];

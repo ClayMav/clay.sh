@@ -26,7 +26,7 @@ export default function RootLayout({
                     <TopNavigation />
                     {children}
                 </div>
-                <div className="absolute w-full pointer-events-none top-0 bottom-0 left-0 right">
+                <div className="absolute w-full pointer-events-none top-0 bottom-0 left-0 right overflow-x-hidden">
                     <Image
                         src={BlueShape}
                         alt="Blue Shape"
