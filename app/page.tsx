@@ -1,6 +1,4 @@
-import ScrollTopButton from "./ScrollTopButton";
-import StratosLogo from "./stratos-logo.png";
-import WherobotsLogo from "./wherobots-logo.png";
+import ScrollTopButton from "../components/ScrollTopButton";
 import Image from "next/image";
 import React from "react";
 
@@ -13,7 +11,14 @@ type ProjectInfo = {
 const projects: ProjectInfo[] = [
     {
         role: "I work here",
-        logo: <Image src={WherobotsLogo} alt="Wherobots Logo" height={40} />,
+        logo: (
+            <Image
+                src="/wherobots-logo.png"
+                alt="Wherobots Logo"
+                width={173}
+                height={40}
+            />
+        ),
         description:
             "The spatial data analytics and AI platform trusted in production, at scale, from the original creators of Apache Sedona.",
         button: (
@@ -33,9 +38,16 @@ const projects: ProjectInfo[] = [
     },
     {
         role: "I founded this",
-        logo: <Image src={StratosLogo} alt="Stratos Logo" height={40} />,
+        logo: (
+            <Image
+                src="/stratos-logo.png"
+                alt="Stratos Logo"
+                width={142}
+                height={40}
+            />
+        ),
         description:
-            "The spatial data analytics and AI platform trusted in production, at scale, from the original creators of Apache Sedona.",
+            "Servers start when you start playing, and sharing with friends has never been faster.",
         button: (
             <a href="https://stratos.host">
                 <button

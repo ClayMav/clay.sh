@@ -1,6 +1,5 @@
 "use client";
 
-import ClayLogo from "./clay-logo.svg";
 import Image from "next/image";
 import React from "react";
 
@@ -22,7 +21,7 @@ export default function TopNavigation() {
                     <div className="mr-8">
                         <a href="/">
                             <Image
-                                src={ClayLogo}
+                                src="/clay-logo.svg"
                                 alt="Clay Logo"
                                 height={42}
                                 width={42}
@@ -78,7 +77,7 @@ export default function TopNavigation() {
                     <div className="flex items-center justify-between">
                         <a href="/">
                             <Image
-                                src={ClayLogo}
+                                src="/clay-logo.svg"
                                 alt="Clay Logo"
                                 height={42}
                                 width={42}

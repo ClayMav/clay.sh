@@ -1,6 +1,6 @@
-import BlueShape from "./BlueShape.svg";
-import OrangeShape from "./OrangeShape.svg";
-import TopNavigation from "./TopNavigation";
+import TopNavigation from "../components/TopNavigation";
+import BlueShape from "../public/BlueShape.svg";
+import OrangeShape from "../public/OrangeShape.svg";
 import "./globals.css";
 import type { Metadata } from "next";
 import Image from "next/image";
