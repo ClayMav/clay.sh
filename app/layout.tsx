@@ -9,6 +9,20 @@ import React from "react";
 export const metadata: Metadata = {
     title: "Clay McGinnis",
     description: "The portfolio of Clay McGinnis",
+    icons: {
+        icon: [
+            {
+                media: "(prefers-color-scheme: light)",
+                url: "/favicon.ico",
+                href: "/favicon.ico",
+            },
+            {
+                media: "(prefers-color-scheme: dark)",
+                url: "/favicon-dark.ico",
+                href: "/favicon-dark.ico",
+            },
+        ],
+    },
 };
 
 export default function RootLayout({
