@@ -1,26 +1,23 @@
-"use client";
-
-import Image from "next/image";
-import React from "react";
+import React from 'react'
 
 const navigation = [
     {
-        name: "Resume",
-        href: "https://github.com/ClayMav/resume/blob/main/resume.pdf",
+        name: 'Resume',
+        href: 'https://github.com/ClayMav/resume/blob/main/resume.pdf',
     },
-    { name: "LinkedIn", href: "https://www.linkedin.com/in/claymav/" },
-    { name: "Github", href: "https://github.com/ClayMav" },
-] as const;
+    { name: 'LinkedIn', href: 'https://www.linkedin.com/in/claymav/' },
+    { name: 'Github', href: 'https://github.com/ClayMav' },
+] as const
 
 export default function TopNavigation() {
-    const [mobileMenuOpen, setMobileMenuOpen] = React.useState(false);
+    const [mobileMenuOpen, setMobileMenuOpen] = React.useState(false)
     return (
         <header>
             <nav className="flex flex-row items-center justify-between">
                 <div className="flex">
                     <div className="mr-8">
                         <a href="/">
-                            <Image
+                            <img
                                 src="/clay-logo.svg"
                                 alt="Clay Logo"
                                 height={42}
@@ -65,18 +62,16 @@ export default function TopNavigation() {
                     </button>
                 </div>
             </nav>
-            {/* <!-- Mobile menu, show/hide based on menu open state. --> */}
             <div
-                className={mobileMenuOpen ? "block" : "hidden"}
+                className={mobileMenuOpen ? 'block' : 'hidden'}
                 role="dialog"
                 aria-modal="true"
             >
-                {/* <!-- Background backdrop, show/hide based on slide-over state. --> */}
                 <div className="fixed inset-0 z-10"></div>
                 <div className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-4 py-4 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
                     <div className="flex items-center justify-between">
                         <a href="/">
-                            <Image
+                            <img
                                 src="/clay-logo.svg"
                                 alt="Clay Logo"
                                 height={42}
@@ -124,5 +119,5 @@ export default function TopNavigation() {
                 </div>
             </div>
         </header>
-    );
+    )
 }
