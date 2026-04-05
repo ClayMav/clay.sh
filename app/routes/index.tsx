@@ -1,18 +1,23 @@
-import ScrollTopButton from "../components/ScrollTopButton";
-import Image from "next/image";
-import React from "react";
+import ScrollTopButton from '../../components/ScrollTopButton'
+import { createFileRoute } from '@tanstack/react-router'
+import React from 'react'
+
+export const Route = createFileRoute('/')({
+    component: Home,
+})
 
 type ProjectInfo = {
-    role: string;
-    logo: React.ReactNode;
-    description: string;
-    button: React.ReactNode;
-};
+    role: string
+    logo: React.ReactNode
+    description: string
+    button: React.ReactNode
+}
+
 const projects: ProjectInfo[] = [
     {
-        role: "I work here",
+        role: 'I work here',
         logo: (
-            <Image
+            <img
                 src="/wherobots-logo.png"
                 alt="Wherobots Logo"
                 width={173}
@@ -20,14 +25,14 @@ const projects: ProjectInfo[] = [
             />
         ),
         description:
-            "The spatial data analytics and AI platform trusted in production, at scale, from the original creators of Apache Sedona.",
+            'The spatial data analytics and AI platform trusted in production, at scale, from the original creators of Apache Sedona.',
         button: (
             <a href="https://wherobots.com">
                 <button
                     className="rounded-md inline px-5 py-4 uppercase text-white bg-gradient-to-l from-[#9e78f0] to-[#0957c3] hover:from-[#1b1b1b] hover:to-[#1b1b1b] border-2 hover:border-[#9e78f0] border-[#141414]"
                     style={{
-                        textDecoration: "none",
-                        letterSpacing: "-.16px",
+                        textDecoration: 'none',
+                        letterSpacing: '-.16px',
                         fontFamily: '"Space Grotesk",sans-serif',
                     }}
                 >
@@ -37,9 +42,9 @@ const projects: ProjectInfo[] = [
         ),
     },
     {
-        role: "I founded this",
+        role: 'I founded this',
         logo: (
-            <Image
+            <img
                 src="/stratos-logo.png"
                 alt="Stratos Logo"
                 width={142}
@@ -47,15 +52,15 @@ const projects: ProjectInfo[] = [
             />
         ),
         description:
-            "Servers start when you start playing, and sharing with friends has never been faster.",
+            'Servers start when you start playing, and sharing with friends has never been faster.',
         button: (
             <a href="https://stratos.host">
                 <button
                     className="rounded-md inline bg-[#2D1B1B] text-white border-double border-4 border-transparent transition-all bg-origin-border w-[181px] h-[3.5rem] hover:border-[6px]"
                     style={{
                         backgroundImage:
-                            "linear-gradient(rgb(27, 29, 30), rgb(27, 29, 30)), radial-gradient(circle at left top, rgb(200, 133, 2), rgb(126, 0, 204))",
-                        backgroundClip: "content-box,border-box",
+                            'linear-gradient(rgb(27, 29, 30), rgb(27, 29, 30)), radial-gradient(circle at left top, rgb(200, 133, 2), rgb(126, 0, 204))',
+                        backgroundClip: 'content-box,border-box',
                     }}
                 >
                     Learn More
@@ -63,7 +68,7 @@ const projects: ProjectInfo[] = [
             </a>
         ),
     },
-];
+]
 
 function Project({ role, logo, description, button }: ProjectInfo) {
     return (
@@ -73,9 +78,10 @@ function Project({ role, logo, description, button }: ProjectInfo) {
             <p>{description}</p>
             <div>{button}</div>
         </div>
-    );
+    )
 }
-export default function Home() {
+
+function Home() {
     return (
         <main className="flex-1 flex flex-col gap-5 lg:justify-center z-10 pt-20 pb-10 lg:py-0">
             <div className="w-full lg:w-auto">
@@ -84,7 +90,7 @@ export default function Home() {
                         Clay McGinnis
                     </h1>
                     <p className="md:text-lg max-w-[400px]">
-                        I’m a <strong>software developer and maker</strong> with
+                        I'm a <strong>software developer and maker</strong> with
                         a passion for user experience
                     </p>
                 </div>
@@ -101,5 +107,5 @@ export default function Home() {
             </ul>
             <ScrollTopButton />
         </main>
-    );
+    )
 }

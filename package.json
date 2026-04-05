@@ -3,38 +3,45 @@
   "version": "0.1.0",
   "license": "MIT",
   "private": false,
+  "type": "module",
   "engines": {
-    "node": ">=18.0.0",
+    "node": ">=20.0.0",
     "npm": "please-use-yarn"
   },
   "scripts": {
-    "build": "next build",
-    "serve": "next start",
-    "start": "next dev",
-    "lint": "next lint",
-    "lint:fix": "next lint --fix"
+    "dev": "vite dev",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "vite build && wrangler deploy --config dist/server/wrangler.json",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "dependencies": {
-    "next": "14.2.35",
-    "react": "^18",
-    "react-dom": "^18"
+    "@tanstack/react-router": "^1.167.16",
+    "@tanstack/react-start": "^1.167.16",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
+    "@cloudflare/vite-plugin": "^1.31.0",
     "@trivago/prettier-plugin-sort-imports": "^4.3.0",
     "@types/node": "^20.10.4",
-    "@types/react": "^18.2.42",
-    "@types/react-dom": "^18.2.17",
-    "autoprefixer": "^10.0.1",
-    "eslint": "^8.55.0",
-    "eslint-config-airbnb": "^19.0.4",
-    "eslint-config-airbnb-typescript": "^17.0.0",
-    "eslint-config-next": "14.0.4",
+    "@types/react": "^18.3.0",
+    "@types/react-dom": "^18.3.0",
+    "@typescript-eslint/eslint-plugin": "^7.18.0",
+    "@typescript-eslint/parser": "^7.18.0",
+    "@vitejs/plugin-react": "^5.0.0",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
-    "eslint-config-react-app": "^7.0.1",
-    "eslint-plugin-prettier": "^5.0.1",
-    "postcss": "^8.4.32",
-    "prettier": "^3.1.0",
-    "tailwindcss": "^3.3.6",
-    "typescript": "^5.3.3"
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-react": "^7.35.0",
+    "postcss": "^8.4.47",
+    "prettier": "^3.3.3",
+    "tailwindcss": "^3.4.14",
+    "typescript": "^5.6.3",
+    "vite": "^7.0.0",
+    "vite-tsconfig-paths": "^5.1.3",
+    "wrangler": "^4.80.0"
   }
 }
